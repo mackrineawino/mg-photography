@@ -4,17 +4,21 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+
+
 
 
 :root{
   --primary-dark-900: #f2f2fc;
   --primary-dark-100: #fdf9ff;
-  --primary-dark-50: #e8dfec;
-  --text-black-900: #302e4d;
-  --text-black-700: #504e70;
-  --skin-color:  #ec1839;
-  --bg-color: #161516;
-  --bg-color-1: #232223;
+
+
+}
+
+@layer base {
+
+
 
 }
