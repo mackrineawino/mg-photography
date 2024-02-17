@@ -3,7 +3,7 @@ import { IoMenu } from "react-icons/io5";
 import { IoIosCloseCircle } from "react-icons/io";
 import Wedding from "../images/wedding1.jpeg"
 
-const Contact = () => {
+const Graduation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div style={{ backgroundImage: `url('${Wedding}')`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh' }}>
@@ -58,7 +58,7 @@ const Contact = () => {
               <h3 className='text-[20px] text-[#cc7656] font-bold  mb-[25px]'><a href='/about'>ABOUT</a></h3>
               <h3 className='text-[20px] text-[#cc7656] font-bold  mb-[25px]'><a href='/portfolio'>PORTFOLIO</a></h3>
               <h3 className='text-[20px] text-[#cc7656] font-bold  mb-[25px]'><a href='/clients'>CLIENTS</a></h3>
-              <h3 className='text-[20px] text-[#cc7656] font-bold  mb-[25px]'><a href='/contact'>CONTACTS</a></h3>
+              <h3 className='text-[20px] text-[#cc7656] font-bold  mb-[25px]'><a href='/contacts'>CONTACTS</a></h3>
               <h3 className='text-[20px] text-[#cc7656] font-bold'><a href='/pricing'>PRICING</a></h3>
             </div>
           </div>
@@ -68,4 +68,4 @@ const Contact = () => {
   );
 }
 
-export default Contact;
+export default Graduation;
