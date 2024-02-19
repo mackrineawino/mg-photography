@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import WeddingImage1 from '../images/wedding1.jpeg';
-import WeddingImage2 from '../images/bebybump2.jpeg';
-import WeddingImage3 from '../images/outdoor1.jpeg';
+import WeddingImage2 from '../images/New folder/111.jpg';
+import WeddingImage3 from '../images/New folder/outdoor.jpg';
 import babyImage from '../images/baby.jpeg'
 import { FaLocationArrow } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
@@ -9,6 +9,8 @@ import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
 import { IoIosCloseCircle } from "react-icons/io";
+import potrait from  "../images/New folder/pot.JPG"
+import wed from '../images/WED1.jpg'
 
 const Home = () => {
   const sliderRef = useRef(null);
@@ -37,8 +39,9 @@ const Home = () => {
 
   return (
     <div>
-      <div ref={sliderRef} className="h-screen bg-cover flex flex-col justify-between transition-opacity duration-500 ease-in-out">
-        <div className='flex flex-row justify-between p-8 items-center'>
+         <div ref={sliderRef} className="h-screen bg-cover relative flex flex-col justify-between transition-opacity duration-500 ease-in-out">
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className='flex flex-row justify-between p-8 items-center relative z-10'>
           <div className="hidden lg:flex">
             <div className='transition-all duration-300 hover:text-lg hover:font-semibold'>
               <h3 className='pr-10 text-[20px] text-white font-bold '><a href='/'>HOME</a></h3>
@@ -71,7 +74,7 @@ const Home = () => {
             <IoMenu className=' text-[40px] text-[#cc7656]' />
           </div>
         </div>
-        <div className="flex justify-center items-center text-center mb-[200px]">
+        <div className="flex justify-center items-center text-center mb-[200px] relative z-10">
           <div>
             <h1 className='text-[50px] lg:text-[66px] text-white font-[Helvetica]'>{currentDescription.h1}</h1>
             <h2 className='text-[25px] text-white font-[Helvetica] uppercase '>{currentDescription.h2}</h2>
@@ -103,7 +106,7 @@ const Home = () => {
       </div>
       <div className='flex flex-col lg:flex-row mt-[50px] '>
 
-        <div className='w-[100%] lg:w-[900px] h-[400px]' style={{ backgroundImage: `url(${babyImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+        <div className='w-[100%] lg:w-[900px] h-[400px]' style={{ backgroundImage: `url(${potrait})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
 
         <a href='/potraits' className='bg-[#f5f3f0] w-[100%] lg:w-[600px]'>
           <div >
@@ -118,7 +121,7 @@ const Home = () => {
       </div>
       <div className='flex flex-col lg:hidden mt-[50px] '>
 
-        <div className='w-[100%] lg:w-[900px] h-[400px]' style={{ backgroundImage: `url(${babyImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+        <div className='w-[100%] lg:w-[900px] h-[400px]' style={{ backgroundImage: `url(${wed})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
 
         <a href='/weddings' className='bg-[#f5f3f0] w-[100%] lg:w-[600px]'>
           <div >
@@ -142,7 +145,7 @@ const Home = () => {
           </div>
         </a>
 
-        <div className='w-[100%] lg:w-[900px]  h-[400px]' style={{ backgroundImage: `url(${babyImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+        <div className='w-[100%] lg:w-[900px]  h-[400px]' style={{ backgroundImage: `url(${wed})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
       </div>
       <div className='flex mb-[150px] flex-col lg:flex-row'>
 

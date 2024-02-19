@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import { IoMenu } from "react-icons/io5";
 import { IoIosCloseCircle } from "react-icons/io";
 import Wedding from "../images/wedding1.jpeg"
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div style={{ backgroundImage: `url('${Wedding}')`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh' }}>
+    <div>
+    <div style={{ backgroundImage: `url('${Wedding}')`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '60vh' }}>
       <div className='flex flex-row justify-between p-8 items-center'>
         <div className="hidden lg:flex">
           <div className='transition-all duration-300 hover:text-lg hover:font-semibold'>
@@ -43,7 +47,7 @@ const Contact = () => {
       <div className="flex justify-center items-center text-center mb-[200px]">
         <div>
           {/* Replace currentDescription with your desired content */}
-          <h1 className='text-[50px] lg:text-[66px] text-white font-[Helvetica]'>Your Content Here</h1>
+          <h1 className='text-[50px] lg:text-[66px] text-white font-[Helvetica]'>GET IN TOUCH</h1>
           <h2 className='text-[25px] text-white font-[Helvetica] uppercase '>Your Content Here</h2>
         </div>
       </div>
@@ -64,6 +68,17 @@ const Contact = () => {
           </div>
         </div>
       )}
+    </div>
+    <div>
+        <div className='flex justify-center text-[30px] lg:text-[40px] my-[100px] text-[#cc7656] text-center'>
+          <div className='hover:text-[50px]'>  <a href='/'><FaFacebook className='lg:mx-[70px] mx-[50px]' /></a></div>
+          <div className='hover:text-[50px]'>  <a href='/'><FaInstagram className='lg:mx-[70px] mx-[50px]' /></a></div>
+          <div className='hover:text-[50px]'><a href='/'><FaLinkedin className='lg:mx-[70px] mx-[50px]' /></a></div>
+        </div >
+        <div className='mb-[50px] flex flex-col justify-center items-center'>
+          <h2 className='text-[15px] lg:text-[18px] font-bold font-[Helvetica]'>All content Copyright © 2024 Maurine Gilbert</h2>
+        </div>
+      </div>
     </div>
   );
 }
