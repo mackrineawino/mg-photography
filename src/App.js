@@ -6,7 +6,7 @@ import Contact from './components/Contact';
 import Portraits from './components/Portraits';
 import Pricing from './components/Pricing';
 import Wedddings from './components/Weddings';
-import Graduation from './components/Graduation';
+import Lifestyle from './components/Lifestyle';
 
 
 
@@ -22,7 +22,7 @@ function App() {
           <Route path="/potraits" element={<Portraits />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/weddings" element={<Wedddings />} />
-          <Route path="/graduation" element={<Graduation />} />
+          <Route path="/lifestyle" element={<Lifestyle />} />
         </Routes>
 
       </Router>

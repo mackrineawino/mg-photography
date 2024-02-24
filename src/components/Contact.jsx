@@ -26,7 +26,7 @@ const Contact = () => {
             zIndex: 10, // Ensure overlay covers the background image
           }}
         />
-        <div style={{ position: 'relative', zIndex: 20 }}>
+        <div style={{ position: 'relative', zIndex: 50 }}>
           <Navbar />
         </div>
 
@@ -37,30 +37,30 @@ const Contact = () => {
         </div>
       </div>
       <div>
-        <div className='flex items-center justify-between mt-[50px]  '>
+        <div className='flex flex-col lg:flex-row items-center justify-between mt-[50px]  '>
 
-          <form action="" className='ml-[50px] '>
+          <form action="" className='lg:ml-[50px] '>
             <h2 className='mb-[30px] text-[30px] '>Lets Talk</h2>
             <label htmlFor="name" className=''>Name</label><br></br>
-            <input type="text" id="name" name="name" placeholder='Enter Your Name' className=' outline w-[600px] py-[6px] rounded-md' required /><br></br><br></br>
+            <input type="text" id="name" name="name" placeholder='Enter Your Name' className=' outline  w-[100%]  lg:w-[600px] py-[6px] rounded-md' required /><br></br><br></br>
 
             <label htmlFor="email">Email</label><br></br>
-            <input type="email" id="email" name="email" placeholder='Enter Your Email' className='outline w-[600px] py-[6px] rounded-md' required /><br></br><br></br>
+            <input type="email" id="email" name="email" placeholder='Enter Your Email' className='outline w-[100%]  lg:w-[600px] py-[6px] rounded-md' required /><br></br><br></br>
 
             <label htmlFor="message" className=''>Message</label><br></br>
-            <textarea id="message" name="message" rows="4" placeholder='Type Your Message' className='outline w-[600px] rounded-md' required></textarea><br></br>
+            <textarea id="message" name="message" rows="4" placeholder='Type Your Message' className='outline w-[100%]  lg:w-[600px] rounded-md' required></textarea><br></br>
 
-            <button type="submit" className=' bg-[#cc7656]  text-white w-[600px] py-[6px] mt-[50px] rounded-md transition-all duration-300 hover:scale-105'>SEND</button>
+            <button type="submit" className=' bg-[#cc7656]  text-white w-[600px] py-[6px] mt-[50px] mb-[50px] rounded-md transition-all duration-300 hover:scale-105'>SEND</button>
           </form>
-         <a href='/about'>
-         <div className='bg-[#d2dae2] rounded-md w-[500px] h-[500px] mr-[50px] flex flex-col justify-end items-center transition-all duration-300 hover:scale-105' style={{ backgroundImage: `url('${baby}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-  <div className='pb-[30px] text-center text-white'>
-    <h1 className='text-[30px] font-semi-bold'>About</h1>
-    <h1 className='text-[20px]'>READ MY STORY</h1>
-  </div>
-</div>
+          <a href='/about'>
+            <div className='bg-[#d2dae2] rounded-md  w-[600px] lg:w-[500px] h-[500px] lg:ml-[40px] lg:mr-[50px] flex flex-col justify-end items-center transition-all duration-300 hover:scale-105' style={{ backgroundImage: `url('${baby}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+              <div className='pb-[30px] text-center text-white'>
+                <h1 className='text-[30px] font-semi-bold'>About</h1>
+                <h1 className='text-[20px]'>READ MY STORY</h1>
+              </div>
+            </div>
 
-         </a>
+          </a>
         </div>
       </div>
       <div>

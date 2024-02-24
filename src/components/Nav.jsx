@@ -9,13 +9,10 @@ const Nav = () => {
     const [portfolioOpen, setPortfolioOpen] = useState(false);
   return (
     <div>
-      <div className='flex flex-row justify-between p-8 items-center'>
+      <div className='flex flex-row justify-between p-8 items-center relative z-50'>
           <div className="hidden lg:flex">
             <div className='transition-all duration-300 hover:text-lg hover:font-semibold'>
               <h3 className='pr-10 text-[20px] text-white font-bold '><a href='/'>HOME</a></h3>
-            </div>
-            <div className='transition-all duration-300 hover:text-lg hover:font-semibold'>
-              <h3 className='pr-10 text-[20px] text-white font-bold '><a href='/about'>ABOUT</a></h3>
             </div>
             <div className='transition-all duration-300 hover:text-lg hover:font-semibold'>
             <h3 className='text-[20px]  text-white font-bold cursor-pointer relative' onClick={() => setPortfolioOpen(!portfolioOpen)}>
@@ -32,13 +29,10 @@ const Nav = () => {
 
           <div className="hidden lg:flex flex-wrap lg:flex-nowrap">
             <div className='transition-all duration-300 hover:text-lg hover:font-semibold lg:block'>
-              <h3 className='pr-10 text-[20px] text-white font-bold '><a href='/clients'>CLIENTS</a></h3>
+              <h3 className='pr-10 text-[20px] text-white font-bold '><a href='/about'>ABOUT</a></h3>
             </div>
             <div className='transition-all duration-300 hover:text-lg hover:font-semibold lg:block'>
               <h3 className='pr-10 text-[20px] text-white font-bold '><a href='/contact'>CONTACTS</a></h3>
-            </div>
-            <div className='transition-all duration-300 hover:text-lg hover:font-semibold lg:block'>
-              <h3 className='text-[20px] text-white font-bold '><a href='/pricing'>PRICING</a></h3>
             </div>
           </div>
           <div className='lg:hidden ml-auto' onClick={() => setMenuOpen(!menuOpen)}>
@@ -54,14 +48,12 @@ const Nav = () => {
               </div>
               <div className='flex flex-col justify-center pt-[100px]  items-center text-center '>
                 <h3 className='text-[20px] text-[#cc7656] font-bold mb-[25px]'><a href='/'>HOME</a></h3>
-                <h3 className='text-[20px] text-[#cc7656] font-bold  mb-[25px]'><a href='/about'>ABOUT</a></h3>
                 <h3 className='text-[20px] text-[#cc7656] font-bold mb-[25px] relative' onClick={() => setPortfolioOpen(!portfolioOpen)}>
                 PORTFOLIO
                 {portfolioOpen && <PortfolioDropdown />}
               </h3>
-                <h3 className='text-[20px] text-[#cc7656] font-bold  mb-[25px]'><a href='/clients'>CLIENTS</a></h3>
-                <h3 className='text-[20px] text-[#cc7656] font-bold  mb-[25px]'><a href='/contacts'>CONTACTS</a></h3>
-                <h3 className='text-[20px] text-[#cc7656] font-bold'><a href='/pricing'>PRICING</a></h3>
+                <h3 className='text-[20px] text-[#cc7656] font-bold  mb-[25px]'><a href='/about'>ABOUT</a></h3>
+                <h3 className='text-[20px] text-[#cc7656] font-bold  mb-[25px]'><a href='/contact'>CONTACTS</a></h3>
               </div>
             </div>
           </div>

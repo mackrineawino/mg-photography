@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import WeddingImage1 from '../images/wedding1.jpeg';
 import WeddingImage2 from '../images/New folder/111.jpg';
 import WeddingImage3 from '../images/New folder/outdoor.jpg';
-import babyImage from '../images/baby.jpeg'
+import babyImage from '../images/New folder/pp.JPG'
 import { FaLocationArrow } from "react-icons/fa";
 import potrait from "../images/New folder/pot.JPG"
 import wed from '../images/WED1.jpg'
@@ -41,7 +41,7 @@ const Home = () => {
     <div>
       <div ref={sliderRef} className="h-screen bg-cover relative flex flex-col justify-between transition-opacity duration-500 ease-in-out">
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className='z-10'>
+        <div className='z-50'>
           <Navbar />
 
         </div>
@@ -103,11 +103,11 @@ const Home = () => {
       <div className='flex mb-[150px] flex-col lg:flex-row'>
 
         <div className='w-[100%] lg:w-[900px] h-[400px]' style={{ backgroundImage: `url(${babyImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-        <a href='/graduation' className='bg-[#f5f3f0] w-[100%] lg:w-[600px]'>
+        <a href='/lifestyle' className='bg-[#f5f3f0] w-[100%] lg:w-[600px]'>
           <div >
             <div className='flex flex-col justify-center items-center text-center mt-[150px]'>
-              <h2 className='uppercase text-[#575d64] font-[Helvetica] text-[20px]'>Beautiful moments captured forever</h2>
-              <h2 className='font-bold text-[40px] font-[Helvetica] text-[#594d44]'>Graduation</h2>
+              <h2 className='uppercase text-[#575d64] font-[Helvetica] text-[20px]'>Capturing Your way of life</h2>
+              <h2 className='font-bold text-[40px] font-[Helvetica] text-[#594d44]'>Lifestyle</h2>
               <h2><FaLocationArrow className='text-[35px] text-[#cc7656] mt-4 hover:text-[40px]' /></h2>
             </div>
           </div>
@@ -121,10 +121,10 @@ const Home = () => {
           </div>
           <FaLocationArrow className='text-[35px] text-[#cc7656] mt-4' />
         </a>
-        <a href='/pricing' className='flex flex-col items-center bg-[#f5f3f0] w-[100%] p-[90px] rounded-md mb-[20px] lg: mr-[20px]'>
+        <a href='/lifestyle' className='flex flex-col items-center bg-[#f5f3f0] w-[100%] p-[90px] rounded-md mb-[20px] lg: mr-[20px]'>
           <div>
-            <h2 className='uppercase text-[15px] font-extralight'>Explore available packages</h2>
-            <h2 className='mt-[15px] text-[30px] font-bold'>Pricing</h2>
+            <h2 className='uppercase text-[15px] font-extralight'>Explore MyPortfolio</h2>
+            <h2 className='mt-[15px] text-[30px] font-bold'>Portfolio</h2>
           </div>
           <FaLocationArrow className='text-[35px] text-[#cc7656] mt-4 ' />
         </a>

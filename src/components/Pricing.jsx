@@ -27,7 +27,7 @@ const Pricing = () => {
             zIndex: 10, // Ensure overlay covers the background image
           }}
         />
-  <div style={{ position: 'relative', zIndex: 20 }}>
+  <div style={{ position: 'relative', zIndex: 50 }}>
   <Navbar />
   </div>
       <div className="flex justify-center items-center text-center mb-[200px]" style={{ position: 'relative', zIndex: 20 }}>
