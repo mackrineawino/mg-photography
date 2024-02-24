@@ -1,83 +1,70 @@
-import React, { useState } from 'react';
-import { IoMenu } from "react-icons/io5";
-import { IoIosCloseCircle } from "react-icons/io";
-import Wedding from "../images/wedding1.jpeg"
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import React from 'react';
+import about from "../images/New folder/about.jpg"
+import baby from "../images/pricing-removebg-preview.png"
+import Navbar from "./Nav"
+import Footer from "./Footer"
 
 const Contact = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div>
-    <div style={{ backgroundImage: `url('${Wedding}')`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '60vh' }}>
-      <div className='flex flex-row justify-between p-8 items-center'>
-        <div className="hidden lg:flex">
-          <div className='transition-all duration-300 hover:text-lg hover:font-semibold'>
-            <h3 className='pr-10 text-[20px] text-white font-bold '><a href='/'>HOME</a></h3>
-          </div>
-          <div className='transition-all duration-300 hover:text-lg hover:font-semibold'>
-            <h3 className='pr-10 text-[20px] text-white font-bold '><a href='/about'>ABOUT</a></h3>
-          </div>
-          <div className='transition-all duration-300 hover:text-lg hover:font-semibold'>
-            <h3 className='text-[20px]  text-white font-bold '><a href='/portfolio'>PORTFOLIO</a></h3>
-          </div>
+    <div style={{ position: 'relative' }}>
+      <div style={{
+        backgroundImage: `url('${about}')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        minHeight: '60vh',
+        position: 'relative',
+      }}>
+        {/* Overlay */}
+        <div
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            backgroundColor: 'rgba(0, 0, 0, 0.3)',
+            zIndex: 10, // Ensure overlay covers the background image
+          }}
+        />
+        <div style={{ position: 'relative', zIndex: 20 }}>
+          <Navbar />
         </div>
 
-        <div className=' bg-black  text-white   hover:bg-white hover:text-black rounded-md '>
-          <h1 className='text-[30px] font-sixtyfour font-bold  px-5 py-2 '><a href='/'>Maurine G</a></h1>
-        </div>
-
-        <div className="hidden lg:flex flex-wrap lg:flex-nowrap">
-          <div className='transition-all duration-300 hover:text-lg hover:font-semibold lg:block'>
-            <h3 className='pr-10 text-[20px] text-white font-bold '><a href='/clients'>CLIENTS</a></h3>
+        <div className="flex justify-center items-center text-center mb-[200px]" style={{ position: 'relative', zIndex: 20 }}>
+          <div>
+            <h1 className='text-[50px] lg:text-[66px] text-white font-[Helvetica]'>GET IN TOUCH</h1>
           </div>
-          <div className='transition-all duration-300 hover:text-lg hover:font-semibold lg:block'>
-            <h3 className='pr-10 text-[20px] text-white font-bold '><a href='/contact'>CONTACTS</a></h3>
-          </div>
-          <div className='transition-all duration-300 hover:text-lg hover:font-semibold lg:block'>
-            <h3 className='text-[20px] text-white font-bold '><a href='/pricing'>PRICING</a></h3>
-          </div>
-        </div>
-
-        <div className='lg:hidden ml-auto' onClick={() => setMenuOpen(!menuOpen)}>
-          <IoMenu className=' text-[40px] text-[#cc7656]' />
         </div>
       </div>
-      <div className="flex justify-center items-center text-center mb-[200px]">
-        <div>
-          {/* Replace currentDescription with your desired content */}
-          <h1 className='text-[50px] lg:text-[66px] text-white font-[Helvetica]'>GET IN TOUCH</h1>
-          <h2 className='text-[25px] text-white font-[Helvetica] uppercase '>Your Content Here</h2>
+      <div>
+        <div className='flex items-center justify-between mt-[50px]  '>
+
+          <form action="" className='ml-[50px] '>
+            <h2 className='mb-[30px] text-[30px] '>Lets Talk</h2>
+            <label htmlFor="name" className=''>Name</label><br></br>
+            <input type="text" id="name" name="name" placeholder='Enter Your Name' className=' outline w-[600px] py-[6px] rounded-md' required /><br></br><br></br>
+
+            <label htmlFor="email">Email</label><br></br>
+            <input type="email" id="email" name="email" placeholder='Enter Your Email' className='outline w-[600px] py-[6px] rounded-md' required /><br></br><br></br>
+
+            <label htmlFor="message" className=''>Message</label><br></br>
+            <textarea id="message" name="message" rows="4" placeholder='Type Your Message' className='outline w-[600px] rounded-md' required></textarea><br></br>
+
+            <button type="submit" className=' bg-[#cc7656]  text-white w-[600px] py-[6px] mt-[50px] rounded-md transition-all duration-300 hover:scale-105'>SEND</button>
+          </form>
+         <a href='/about'>
+         <div className='bg-[#d2dae2] rounded-md w-[500px] h-[500px] mr-[50px] flex flex-col justify-end items-center transition-all duration-300 hover:scale-105' style={{ backgroundImage: `url('${baby}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+  <div className='pb-[30px] text-center text-white'>
+    <h1 className='text-[30px] font-semi-bold'>About</h1>
+    <h1 className='text-[20px]'>READ MY STORY</h1>
+  </div>
+</div>
+
+         </a>
         </div>
       </div>
-      {menuOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-          <div className="bg-white  w-[100%] h-[100vh] ">
-            <div className='flex justify-end mr-[20px] mt-[20px]'>
-              <IoIosCloseCircle className='text-[35px] text-[#cc7656]' onClick={() => setMenuOpen(false)} />
-            </div>
-            <div className='flex flex-col justify-center pt-[100px]  items-center text-center '>
-              <h3 className='text-[20px] text-[#cc7656] font-bold mb-[25px]'><a href='/'>HOME</a></h3>
-              <h3 className='text-[20px] text-[#cc7656] font-bold  mb-[25px]'><a href='/about'>ABOUT</a></h3>
-              <h3 className='text-[20px] text-[#cc7656] font-bold  mb-[25px]'><a href='/portfolio'>PORTFOLIO</a></h3>
-              <h3 className='text-[20px] text-[#cc7656] font-bold  mb-[25px]'><a href='/clients'>CLIENTS</a></h3>
-              <h3 className='text-[20px] text-[#cc7656] font-bold  mb-[25px]'><a href='/contact'>CONTACTS</a></h3>
-              <h3 className='text-[20px] text-[#cc7656] font-bold'><a href='/pricing'>PRICING</a></h3>
-            </div>
-          </div>
-        </div>
-      )}
-    </div>
-    <div>
-        <div className='flex justify-center text-[30px] lg:text-[40px] my-[100px] text-[#cc7656] text-center'>
-          <div className='hover:text-[50px]'>  <a href='/'><FaFacebook className='lg:mx-[70px] mx-[50px]' /></a></div>
-          <div className='hover:text-[50px]'>  <a href='/'><FaInstagram className='lg:mx-[70px] mx-[50px]' /></a></div>
-          <div className='hover:text-[50px]'><a href='/'><FaLinkedin className='lg:mx-[70px] mx-[50px]' /></a></div>
-        </div >
-        <div className='mb-[50px] flex flex-col justify-center items-center'>
-          <h2 className='text-[15px] lg:text-[18px] font-bold font-[Helvetica]'>All content Copyright © 2024 Maurine Gilbert</h2>
-        </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
