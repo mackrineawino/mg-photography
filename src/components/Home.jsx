@@ -57,6 +57,7 @@ const Home = () => {
         <h3 className='font-sans text-[30px] lg:text-[35px]'>“Today, everything exists to end in a photograph.”</h3>
         <h5 className='mt-[20px] uppercase text-[15px] lg:text-[20px] mb-[50px]'>-Susan Sontag.</h5>
       </div>
+      <hr></hr>
       <div className='flex flex-col lg:flex-row mt-[50px] '>
 
         <div className='w-[100%] lg:w-[900px] h-[400px]' style={{ backgroundImage: `url(${potrait})`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>

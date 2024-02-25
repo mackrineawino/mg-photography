@@ -108,6 +108,7 @@ const About = () => {
 </p></div>
       </div>
       </a>
+     
       <Footer />
     </div>
   );

@@ -43,7 +43,7 @@ const Weddings = () => {
 <h2 className='text:[30px] lg:text-[40px] font-[Helvetica]'>From Engagement to "I Do" </h2>
 <h2 className='text:[25px] lg:text-[30px] font-[Helvetica]'>My Wedding Photography Portfolio</h2>
       </div>
-
+<hr className='mt-[50px]'></hr>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[35px] mt-[50px] px-10 rounded-md">
         {WeddingList.map((wedd, key) => (
           <div key={key} className="gridItem h-[500px] relative">

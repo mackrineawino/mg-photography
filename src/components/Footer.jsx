@@ -6,7 +6,8 @@ import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-       <div className='bg-[#d2dae2]'>
+       <hr className='mt-[50px]'></hr>
+       <div className=' bg-gradient-to-t from-blue-200'>
         <div className='flex justify-center text-[30px] lg:text-[40px] pt-[50px] my-[100px] text-[#cc7656] text-center'>
           <div className='hover:text-[50px]'>  <a href='/'><FaFacebook className='lg:mx-[70px] mx-[50px]' /></a></div>
           <div className='hover:text-[50px]'>  <a href='/'><FaInstagram className='lg:mx-[70px] mx-[50px]' /></a></div>

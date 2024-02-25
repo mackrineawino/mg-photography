@@ -21,6 +21,7 @@ const Portraits = () => {
         <h2 className='text:[30px] lg:text-[40px] font-[Helvetica]'>Capturing the Essence of Personality </h2>
         <h2 className='text:[25px] lg:text-[30px] font-[Helvetica]'>My Passion for Portrait Photography</h2>
       </div>
+      <hr className='mt-[50px]'></hr>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[35px] mt-[50px] px-10 rounded-md">
         {PotraitList.map((potrait, key) => (
           <div key={key} className="gridItem h-[500px] relative bg-black">

@@ -42,6 +42,7 @@ const LifeStyle = () => {
         <h2 className='text:[30px] lg:text-[40px] font-[Helvetica] text-center'>From Candid Moments to Styled Shoots</h2>
         <h2 className='text:[25px] lg:text-[30px] font-[Helvetica]'>My Lifestyle Photography Portfolio</h2>
       </div>
+      <hr className='mt-[50px]'></hr>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[35px] mt-[50px] px-10 rounded-md">
         {LifestyleList.map((lifestyle, key) => (
           <div key={key} className="gridItem h-[500px] relative bg-black">
