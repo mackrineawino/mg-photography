@@ -15,8 +15,8 @@ const Home = () => {
   const sliderRef = useRef(null);
   const [descriptions, setDescriptions] = useState([
     { h1: 'WEDDING COVERAGE', h2: 'Beautiful moments captured forever.' },
-    { h1: 'BABY BUMP', h2: 'Cherish the anticipation of a new life.' },
-    { h1: 'OUTDOOR PHOTOSHOOT', h2: 'Embrace nature in every frame.' },
+    { h1: 'BABY BUMPS', h2: 'Cherish the anticipation of a new life.' },
+    { h1: 'OUTDOOR PHOTOSHOOTS', h2: 'Embrace nature in every frame.' },
   ]);
   const [currentDescription, setCurrentDescription] = useState(descriptions[0]);
 
