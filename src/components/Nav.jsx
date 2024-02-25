@@ -49,13 +49,13 @@ const Nav = () => {
               <IoIosCloseCircle className='text-[35px] text-[#cc7656]' onClick={() => setMenuOpen(false)} />
             </div>
             <div className='flex flex-col justify-center pt-[100px]  items-center text-center '>
-              <h3 className='text-[20px] text-[#cc7656] font-bold mb-[25px]'><a href='/'>HOME</a></h3>
-              <h3 className='text-[20px] text-[#cc7656] font-bold mb-[25px] relative' onClick={() => setPortfolioOpen(!portfolioOpen)}>
+              <h3 className='text-[30px] text-[#cc7656] font-bold mb-[25px] '><a href='/'>HOME</a></h3>
+              <h3 className='text-[30px] text-[#cc7656] font-bold mb-[25px] relative' onClick={() => setPortfolioOpen(!portfolioOpen)}>
                 PORTFOLIO
                 {portfolioOpen && <PortfolioDropdown />}
               </h3>
-              <h3 className='text-[20px] text-[#cc7656] font-bold  mb-[25px]'><a href='/about'>ABOUT</a></h3>
-              <h3 className='text-[20px] text-[#cc7656] font-bold  mb-[25px]'><a href='/contact'>CONTACTS</a></h3>
+              <h3 className='text-[30px] text-[#cc7656] font-bold  mb-[25px]'><a href='/about'>ABOUT</a></h3>
+              <h3 className='text-[30px] text-[#cc7656] font-bold  mb-[25px]'><a href='/contact'>CONTACTS</a></h3>
             </div>
           </div>
         </div>
