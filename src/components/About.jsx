@@ -4,8 +4,8 @@ import Hero from "../images/mg1.jpeg"
 import potraits from "../images/ppp.jpeg"
 import weddings from '../images/New folder/wed4.jpg'
 import lifestyle from '../images/New folder/pp.JPG'
-import Wedding from "../images/New folder/aa.jpg"
-import Typed from "react-typed";
+import Wedding from "../images/New folder/aa.jpg";
+import {ReactTyped} from "react-typed";
 
 
 import Navbar from "./Nav"
@@ -39,12 +39,23 @@ const About = () => {
         </div>
         <div className=' flex flex-col lg:flex-row justify-between items-center text-center lg:text-left  font-[Helvetica] mt-[-20px] z-50 bg-[#000] h-auto mx-[40px]  rounded-lg' style={{ position: 'relative', zIndex: 50 }}>
           <div className=' flex  flex-col justify-center '>
-            <h1 className='text-[30px] px-[40px] lg:w-[700px] w-auto font[Helvetica]'><span className=' lg:text-[20px] text-[15px] text-[#EB2837] mb-4'>Hello, Welcome</span><br></br><span className='lg:text-[50px] text-[30px] text-[white]'>I'm <span className=' uppercase'>Maureen Gilbert</span></span>  <br></br> <span className='text-[#b1bacc] lg:text-[20px] md:text-[18px] text-[15px]'>Am not just a photographer and videographer,
+            <h1 className='text-[30px] px-[40px] lg:w-[700px] w-auto font[Helvetica]'><span className=' lg:text-[20px] text-[15px] text-[#EB2837] mb-4'>Hello,
+             Welcome</span><br></br><span className='lg:text-[50px] text-[30px] text-[white]'>
+             <ReactTyped
+                  className=""
+                  strings={[
+                    "I'm MAUREEN GILBERT",
+                  ]}
+                  typeSpeed={120}
+                  backSpeed={150}
+                  loop
+                />
+                </span>  <br></br> <span className='text-[#b1bacc] lg:text-[20px] md:text-[18px] text-[15px]'>Am not just a photographer and videographer,
               I am a storyteller who crafts narratives through my lens.</span></h1>
-            <a href='/contact'><button className='lg:ml-[40px] mt-6 font-bold bg-[#EB2837] text-white py-[8px] lg:w-[25%] md:w-[550px] w-[450px] rounded-md'>CONTACT ME</button></a>
+            <a href='/contact'><button className='lg:ml-[40px] mt-6 font-bold bg-[#EB2837] text-white py-[8px] lg:w-[25%] md:w-[550px] w-[300px] rounded-md'>CONTACT ME</button></a>
           </div>
 
-          <div className=' flex justify-center items-center lg:mr-[80px] md:w-[550px] w-[450px] lg:w-[400px] h-[450px]  rounded-md mt-[40px] mb-[40px]'>
+          <div className=' flex justify-center items-center lg:mr-[80px] md:w-[550px] w-[300px] lg:w-[400px] h-[450px]  rounded-md mt-[40px] mb-[40px]'>
             <img src={Hero} className=" w-full h-full object-cover" alt="" />
           </div>
         </div>

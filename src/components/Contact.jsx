@@ -24,13 +24,13 @@ const Contact = () => {
     e.preventDefault();
 
     const serviceId = 'service_ea4i9ip';
-    const templateId = 'template_om0oz6g';
+    const templateId = 'template_fgv5tgh';
     const publicKey = 'lbDe_9OpRzACbOnBy';
 
     const templateParams = {
       from_name: name,
       from_email: email,
-      to_name: 'Awino Mackrine',
+      to_name: 'Maureen Gilbert',
       message: message,
     };
 
@@ -93,14 +93,14 @@ const Contact = () => {
 
         <div className='flex justify-between text-[30px] lg:text-[40px] mt-[-50px] pb-[50px] mb-[30px] text-[#cc7656] text-center'  style={{ position: 'relative', zIndex: 20 }}>
           <div className='hover:text-[50px]  bg-gray-500 w-[150px] h-[130px]  flex justify-center items-center shadow-lg rounded-md ml-[50px] '>
-            <a href='/'>
+            <a href='https://www.facebook.com/moreen.gilbert.52?mibextid=ZbWKwL'>
               <div className="rounded-full bg-blue-600 p-2 flex items-center justify-center" style={{ width: '70px', height: '70px', overflow: 'hidden' }}>
                 <FaFacebook className='text-white' />
               </div>
             </a>
           </div>
           <div className='hover:text-[50px] bg-gray-500 w-[150px] h-[130px]  flex justify-center items-center shadow-lg rounded-md'>
-            <a href='/'>
+            <a href='https://www.instagram.com/maureenkoome?utm_source=qr&igsh=d21hcmMzZnBoNGM2'>
               <div className="rounded-full bg-blue-600 p-2 flex items-center justify-center" style={{ width: '70px', height: '70px', overflow: 'hidden' }}>
                 <FaInstagram className='text-white' />
               </div>
