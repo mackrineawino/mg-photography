@@ -129,7 +129,7 @@ const Home = () => {
           </div>
           <FaLocationArrow className='text-[35px] text-[#cc7656] mt-4 ' />
         </a>
-        <a href='/contacts' className='flex flex-col items-center bg-[#f5f3f0] w-[100%] p-[90px] rounded-md  mb-[20px] lg: mr-[20px]'>
+        <a href='/contact' className='flex flex-col items-center bg-[#f5f3f0] w-[100%] p-[90px] rounded-md  mb-[20px] lg: mr-[20px]'>
           <div>
             <h2 className='uppercase text-[15px] font-extralight'>Get in touch</h2>
             <h2 className='mt-[15px] text-[30px] font-bold'>Contact</h2>

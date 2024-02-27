@@ -14,7 +14,7 @@ const Weddings = () => {
         backgroundImage: `url('${Wedding}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        minHeight: '60vh',
+        minHeight: '70vh',
         position: 'relative',
       }}>
         {/* Overlay */}
@@ -25,7 +25,7 @@ const Weddings = () => {
             left: 0,
             width: '100%',
             height: '100%',
-            backgroundColor: 'rgba(0, 0, 0, 0.4)',
+            backgroundColor: 'rgba(0, 0, 0, 0.3)',
             zIndex: 10, // Ensure overlay covers the background image
           }}
         />
@@ -39,18 +39,18 @@ const Weddings = () => {
         </div>
 
       </div>
-      <div className='mt-[50px] flex flex-col justify-center items-center'>
-<h2 className='text:[30px] lg:text-[40px] font-[Helvetica]'>From Engagement to "I Do" </h2>
-<h2 className='text:[25px] lg:text-[30px] font-[Helvetica]'>My Wedding Photography Portfolio</h2>
+      <div className='mt-[-50px] flex flex-col justify-center items-center bg-[#f3f1ee] mx-[40px] text-black shadow-lg py-[20px] ' style={{ position: 'relative', zIndex: 100 }}>
+        <h2 className='text:[30px] lg:text-[40px] font-[Helvetica] uppercase'>Love sealed in a moment. </h2>
+        <h2 className='text:[25px] lg:text-[30px] font-[Helvetica]'>My Wedding Photography Portfolio</h2>
       </div>
-<hr className='mt-[50px]'></hr>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[35px] mt-[50px] px-10 rounded-md">
         {WeddingList.map((wedd, key) => (
-          <div key={key} className="gridItem h-[500px] relative">
+          <div key={key} className="gridItem h-[500px] relative transition-all duration-300 hover:scale-105">
             <img src={wedd.image} className="w-full h-full object-cover" alt="Wedding" />
           </div>
         ))}
       </div>
+      
 
       <Footer />
     </div>

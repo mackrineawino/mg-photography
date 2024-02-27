@@ -1,9 +1,12 @@
 import React from 'react';
-import Wedding from "../images/New folder/aa.jpg"
 import Footer from "./Footer"
-import Weddings from "../images/WED-removebg-preview.png"
-import babybump from "../images/babybump-removebg-preview.png"
-import baby from "../images/pricing-removebg-preview.png"
+import Hero from "../images/mg1.jpeg"
+import potraits from "../images/ppp.jpeg"
+import weddings from '../images/New folder/wed4.jpg'
+import lifestyle from '../images/New folder/pp.JPG'
+import Wedding from "../images/New folder/aa.jpg"
+import Typed from "react-typed";
+
 
 import Navbar from "./Nav"
 
@@ -12,14 +15,14 @@ const About = () => {
   return (
 
     <div style={{ position: 'relative' }}>
-      <div style={{
+      <div className='pb-[60px]' style={{
         backgroundImage: `url('${Wedding}')`,
+        // backgroundColor: '#030617',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        minHeight: '60vh',
+        minHeight: 'auto',
         position: 'relative',
       }}>
-        {/* Overlay */}
         <div
           style={{
             position: 'absolute',
@@ -28,87 +31,75 @@ const About = () => {
             width: '100%',
             height: '100%',
             backgroundColor: 'rgba(0, 0, 0, 0.3)',
-            zIndex: 10, // Ensure overlay covers the background image
+            zIndex: 10,
           }}
         />
-        <div style={{ position: 'relative', zIndex: 50 }}>
+        <div style={{ position: 'relative', zIndex: 100 }}>
           <Navbar />
         </div>
+        <div className=' flex flex-col lg:flex-row justify-between items-center text-center lg:text-left  font-[Helvetica] mt-[-20px] z-50 bg-[#000] h-auto mx-[40px]  rounded-lg' style={{ position: 'relative', zIndex: 50 }}>
+          <div className=' flex  flex-col justify-center '>
+            <h1 className='text-[30px] px-[40px] lg:w-[700px] w-auto font[Helvetica]'><span className=' lg:text-[20px] text-[15px] text-[#EB2837] mb-4'>Hello, Welcome</span><br></br><span className='lg:text-[50px] text-[30px] text-[white]'>I'm <span className=' uppercase'>Maureen Gilbert</span></span>  <br></br> <span className='text-[#b1bacc] lg:text-[20px] md:text-[18px] text-[15px]'>Am not just a photographer and videographer,
+              I am a storyteller who crafts narratives through my lens.</span></h1>
+            <a href='/contact'><button className='lg:ml-[40px] mt-6 font-bold bg-[#EB2837] text-white py-[8px] lg:w-[25%] md:w-[550px] w-[450px] rounded-md'>CONTACT ME</button></a>
+          </div>
 
-        <div className="flex justify-center items-center text-center mb-[100px]" style={{ position: 'relative', zIndex: 20 }}>
-          <div>
-
-            <h1 className='text-[30px] lg:text-[40px] text-white font-[Helvetica]'>Hey</h1>
-            <h1 className='text-[40px] lg:text-[50px] text-white font-[Helvetica]'>Am Maureen</h1>
-
+          <div className=' flex justify-center items-center lg:mr-[80px] md:w-[550px] w-[450px] lg:w-[400px] h-[450px]  rounded-md mt-[40px] mb-[40px]'>
+            <img src={Hero} className=" w-full h-full object-cover" alt="" />
           </div>
         </div>
-
-      </div>
-      <div className='flex flex-col justify-center items-center text-center px-[30px] mb-[50px] mt-[100px]'>
-        <p className='font-[Helvetica] text-[20px]'>Am not just a photographer and videographer, I am a storyteller who crafts narratives through my lens.<br /> With an innate passion for capturing life's most precious moments, I brings a unique blend of creativity, professionalism, and warmth to every project I undertake.
-
-        </p>
-      </div>
-      <div className='bg-[#60376d] flex justify-center items-center mb-[50px]'>
-        <img src={Weddings} className="w-300% h-[90vh]" alt="" />
-      </div>
-      <a href='/weddings'>
-      <div className=' flex flex-col lg:flex-row justify-between items-center mx-[50px] font-[Helvetica] mb-[50px]'>
-        <div className='w-[100%] lg:w-[500px] flex justify-center'>
-          <h1 className='text-[30px]'>WEDDINGS</h1>
-        </div>
-
-        <div className='w-[500px] text-[18px]'>  <p> For couples embarking on the journey of a lifetime,
-          I am there to immortalize your love story.
-          With an eye for detail and a knack for capturing candid moments,
-          I ensures that every smile, every tear, and every joyous celebration is preserved for eternity.
-          From the tender exchange of vows to the exhilarating dance floor moments, My photographs
-          and videos tell a tale of love, commitment, and happily ever after.</p></div>
-      </div>
-      </a>
-      <div className='bg-[#bd793a] flex justify-center items-center mb-[50px]'>
-        <img src={babybump} className="w-300% h-[90vh]" alt="" />
-      </div>
-      <a href='/weddings'>
-      <div className=' flex flex-col lg:flex-row justify-between items-center mx-[50px] font-[Helvetica] mb-[50px]'>
-        <div className='w-[100%] lg:w-[500px] flex justify-center'>
-          <h1 className='text-[30px]'>BABY BUMPS</h1>
-        </div>
-
-        <div className='w-[500px] text-[18px]'>  <p>Welcoming a new life into the world is a momentous occasion,
-           and I understands the importance of capturing the anticipation,
-           excitement, and overwhelming joy of a baby shower.
-            With a gentle touch and a keen eye for emotion, 
-            I document the tender moments shared between parents-to-be, family, 
-            and friends as they eagerly await the arrival of your little bundle of joy. 
-            From the heartfelt speeches to the playful games and heartfelt gifts, 
-           my photographs and videos serve as cherished
-             mementos of this special time in a family's life.</p></div>
-      </div>
-      </a>
-      <div className='bg-[#bd3a71] flex justify-center items-center mb-[50px]'>
-        <img src={baby} className="w-300% h-[90vh]" alt="" />
       </div>
 
-      <a href='/potraits'>
-      <div className=' flex flex-col lg:flex-row justify-between items-center mx-[50px] font-[Helvetica] mb-[50px]'>
-        <div className='w-[100%] lg:w-[500px] flex justify-center'>
-          <h1 className='text-[30px]'>POTRAITS</h1>
-        </div>
-
-        <div className='w-[500px] text-[18px]'> 
-         <p>Every individual has a story to tell, and i believe that
-           portraits are a powerful way to capture the essence of a person's 
-           character and personality. Whether it's a professional headshot,
-            a family portrait, or a creative fashion shoot, i work closely 
-            with my clients to ensure that your unique spirit shines through in
-             every photograph.
-
-</p></div>
+      <div className='bg-[#000] flex justify-center items-center mb-[50px]  h-[20vh]'>
+        <h1 className='hidden'>End</h1>
       </div>
-      </a>
-     
+      <div>
+        <h1 className='flex justify-center  mt-[-128px] text-black text-[30px] font-[Helvetica] font-bold bg-white mx-[40px] py-[40px]'>SEE MORE</h1>
+      </div>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mx-[40px]'>
+        <a href='/weddings'>
+          <div className='relative overflow-hidden h-[500px] flex items-center justify-center '>
+            <img
+              src={weddings}
+              className='w-full h-full object-cover'
+              alt='weddings'
+              style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
+            />
+            <h1 className='absolute bottom-0 mb-7 text-3xl text-black transition-transform duration-300 hover:-translate-y-full'>
+              WEDDINGS
+            </h1>
+          </div>
+
+        </a>
+        <a href='/lifestyle'>
+          <div className='relative overflow-hidden h-[500px] flex items-center justify-center '>
+            <img
+              src={lifestyle}
+              className='w-full h-full object-cover'
+              alt='lifestyle'
+              style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
+            />
+            <h1 className='absolute bottom-0 mb-7 text-3xl text-black transition-transform duration-300 hover:-translate-y-full'>
+              LIFESTYLE
+            </h1>
+          </div>
+
+        </a>
+        <a href='/potraits'>
+          <div className='relative overflow-hidden h-[500px] flex items-center justify-center '>
+            <img
+              src={potraits}
+              className='w-full h-full object-cover'
+              alt='potraits'
+              style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}
+            />
+            <h1 className='absolute bottom-0 mb-7 text-3xl text-black transition-transform duration-300 hover:-translate-y-full'>
+              POTRAITS
+            </h1>
+          </div>
+
+        </a>
+      </div>
       <Footer />
     </div>
   );

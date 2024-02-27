@@ -8,7 +8,7 @@ const Portraits = () => {
 
   return (
     <div>
-      <div style={{ backgroundImage: `url('${Wedding}')`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '60vh' }}>
+      <div style={{ backgroundImage: `url('${Wedding}')`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '70vh' }}>
         <Navbar />
         <div className="flex justify-center items-center text-center mb-[200px]">
           <div>
@@ -17,14 +17,13 @@ const Portraits = () => {
         </div>
 
       </div>
-      <div className='mt-[50px] flex flex-col justify-center items-center'>
-        <h2 className='text:[30px] lg:text-[40px] font-[Helvetica]'>Capturing the Essence of Personality </h2>
+      <div className='mt-[-50px] flex flex-col justify-center items-center bg-[#273c5c] mx-[40px] shadow-lg  text-white py-[20px] ' style={{ position: 'relative', zIndex: 100 }}>
+        <h2 className='text:[30px] lg:text-[40px] font-[Helvetica] uppercase'>Moments frozen in time. </h2>
         <h2 className='text:[25px] lg:text-[30px] font-[Helvetica]'>My Passion for Portrait Photography</h2>
       </div>
-      <hr className='mt-[50px]'></hr>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[35px] mt-[50px] px-10 rounded-md">
         {PotraitList.map((potrait, key) => (
-          <div key={key} className="gridItem h-[500px] relative bg-black">
+          <div key={key} className="h-[500px] relative bg-black transition-all duration-300 hover:scale-105">
             <img
               src={potrait.image}
               className="w-full h-full object-cover"

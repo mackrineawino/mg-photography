@@ -13,7 +13,7 @@ const LifeStyle = () => {
         backgroundImage: `url('${life}')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        minHeight: '60vh',
+        minHeight: '70vh',
         position: 'relative',
       }}>
         {/* Overlay */}
@@ -38,14 +38,13 @@ const LifeStyle = () => {
       </div>
      
     </div>
-    <div className='mt-[50px] flex flex-col justify-center items-center'>
-        <h2 className='text:[30px] lg:text-[40px] font-[Helvetica] text-center'>From Candid Moments to Styled Shoots</h2>
+    <div className='mt-[-50px] flex flex-col justify-center items-center bg-[#424140] mx-[40px] text-white py-[20px] ' style={{ position: 'relative', zIndex: 100 }}>
+        <h2 className='text:[30px] lg:text-[40px] font-[Helvetica] text-center uppercase'>Embracing the everyday magic.</h2>
         <h2 className='text:[25px] lg:text-[30px] font-[Helvetica]'>My Lifestyle Photography Portfolio</h2>
       </div>
-      <hr className='mt-[50px]'></hr>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[35px] mt-[50px] px-10 rounded-md">
         {LifestyleList.map((lifestyle, key) => (
-          <div key={key} className="gridItem h-[500px] relative bg-black">
+          <div key={key} className="gridItem h-[500px] relative bg-black transition-all duration-300 hover:scale-105">
             <img
               src={lifestyle.image}
               className="w-full h-full object-cover"
