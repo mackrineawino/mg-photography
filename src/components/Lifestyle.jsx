@@ -28,7 +28,7 @@ const LifeStyle = () => {
             zIndex: 10, // Ensure overlay covers the background image
           }}
         />
-        <div style={{ position: 'relative', zIndex: 50 }}>
+        <div style={{ position: 'relative', zIndex: 100 }}>
           <Navbar />
         </div>
       <div className="flex justify-center items-center text-center mb-[200px]" style={{ position: 'relative', zIndex: 20 }}>
@@ -38,7 +38,7 @@ const LifeStyle = () => {
       </div>
      
     </div>
-    <div className='mt-[-50px] flex flex-col justify-center items-center bg-[#424140] mx-[40px] text-white py-[20px] ' style={{ position: 'relative', zIndex: 100 }}>
+    <div className='mt-[-50px] flex flex-col justify-center items-center bg-[#424140] mx-[40px] text-white py-[20px] ' style={{ position: 'relative', zIndex: 50 }}>
         <h2 className='text:[30px] lg:text-[40px] font-[Helvetica] text-center uppercase'>Embracing the everyday magic.</h2>
         <h2 className='text:[25px] lg:text-[30px] font-[Helvetica]'>My Lifestyle Photography Portfolio</h2>
       </div>

@@ -39,7 +39,7 @@ const Home = () => {
 
   return (
     <div>
-      <div ref={sliderRef} className="h-screen bg-cover relative flex flex-col justify-between transition-opacity duration-500 ease-in-out">
+      <div ref={sliderRef} className="h-screen bg-cover bg-center relative flex flex-col justify-between transition-opacity duration-500 ease-in-out">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className='z-50'>
           <Navbar />

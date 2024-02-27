@@ -9,7 +9,9 @@ const Portraits = () => {
   return (
     <div>
       <div style={{ backgroundImage: `url('${Wedding}')`, backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '70vh' }}>
-        <Navbar />
+      <div style={{ position: 'relative', zIndex: 100 }}>
+          <Navbar />
+        </div>
         <div className="flex justify-center items-center text-center mb-[200px]">
           <div>
             <h1 className='text-[50px] lg:text-[66px] text-white font-[Helvetica]'>POTRAITS</h1>
@@ -17,7 +19,7 @@ const Portraits = () => {
         </div>
 
       </div>
-      <div className='mt-[-50px] flex flex-col justify-center items-center bg-[#273c5c] mx-[40px] shadow-lg  text-white py-[20px] ' style={{ position: 'relative', zIndex: 100 }}>
+      <div className='mt-[-50px] flex flex-col justify-center items-center bg-[#273c5c] mx-[40px] shadow-lg  text-white py-[20px] ' style={{ position: 'relative', zIndex: 50 }}>
         <h2 className='text:[30px] lg:text-[40px] font-[Helvetica] uppercase'>Moments frozen in time. </h2>
         <h2 className='text:[25px] lg:text-[30px] font-[Helvetica]'>My Passion for Portrait Photography</h2>
       </div>

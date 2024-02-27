@@ -44,7 +44,7 @@ const Nav = () => {
 
       {menuOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-          <div className="bg-white  w-[100%] h-[100vh] ">
+          <div className="bg-white  w-[100%] h-[100vh]">
             <div className='flex justify-end mr-[20px] mt-[20px]'>
               <IoIosCloseCircle className='text-[35px] text-[#cc7656]' onClick={() => setMenuOpen(false)} />
             </div>

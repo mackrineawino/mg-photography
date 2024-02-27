@@ -29,7 +29,7 @@ const Weddings = () => {
             zIndex: 10, // Ensure overlay covers the background image
           }}
         />
-        <div style={{ position: 'relative', zIndex: 50 }}>
+        <div style={{ position: 'relative', zIndex: 100 }}>
           <Navbar />
         </div>
         <div className="flex justify-center items-center text-center mb-[200px]" style={{ position: 'relative', zIndex: 20 }}>
@@ -39,7 +39,7 @@ const Weddings = () => {
         </div>
 
       </div>
-      <div className='mt-[-50px] flex flex-col justify-center items-center bg-[#f3f1ee] mx-[40px] text-black shadow-lg py-[20px] ' style={{ position: 'relative', zIndex: 100 }}>
+      <div className='mt-[-50px] flex flex-col justify-center items-center bg-[#f3f1ee] mx-[40px] text-black shadow-lg py-[20px] ' style={{ position: 'relative', zIndex: 50 }}>
         <h2 className='text:[30px] lg:text-[40px] font-[Helvetica] uppercase'>Love sealed in a moment. </h2>
         <h2 className='text:[25px] lg:text-[30px] font-[Helvetica]'>My Wedding Photography Portfolio</h2>
       </div>
